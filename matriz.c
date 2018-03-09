@@ -15,7 +15,8 @@ int numeros_impares = 0;
 void main(void){
 
 	srand(time(NULL));
-	printf("\e[H\e[2J");	//Igual a função system("clear")
+	system("clear");
+	//printf("\e[H\e[2J");	//Igual a função system("clear")
 
 	printf("\nDigite o tamanho quadratico da matriz utilizada (X x Y sendo que Y = X): ");
 	scanf("%d", &tam);
