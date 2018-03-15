@@ -94,6 +94,7 @@ void main(void){
 	printf("\n\nA somatória da diagonal principal é: %d\n\n", somatoria_principal);
 	printf("A somatória da diagonal secundária é: %d\n\n", somatoria_secundaria);
 	printf("A somatória de todos os valores não contemplados acima é: %d\n\n", somatoria_resto);
+<<<<<<< HEAD
 	printf("A somatória de todos os elementos desta matriz é: %d\n\n", acc);
 	printf("A quantidade de numeros pares na diagonal principal é: %d\n\n", quant_par_prin);
 	printf("A somatória dos pares da diagonal secundaria é: %d\n\n", soma_par_sec);
@@ -107,5 +108,7 @@ void main(void){
 		printf("Ja que o numero de pares desta matriz é igual a %d então o resultado é: %d\n\nBy Matheus Peres\n\n", cont_pares, numeros_impares*2);
 
 	}
+=======
+>>>>>>> f70743949bed108da945051395086a07826a6b1d
 
 }
