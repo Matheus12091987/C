@@ -64,6 +64,6 @@ void main(void){
 
 	printf("\n\nA somatória da diagonal principal é: %d\n\n", somatoria_principal);
 	printf("A somatória da diagonal secundária é: %d\n\n", somatoria_secundaria);
-	printf("A somatória de todos os valores não contemplados acima é: %d\n\nBy Matheus Peres\n\n", somatoria_resto);
+	printf("A somatória de todos os valores não contemplados acima é: %d\n\n", somatoria_resto);
 
 }
