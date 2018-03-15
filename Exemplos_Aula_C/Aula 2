@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+void main (void){
+
+	int n1 = 0;
+
+	printf("Digite o Numero: ");
+	scanf("%d", &n1)
+
+	if(n1>15 && n1<35){
+
+		printf("O numero %d esta no range de funcionalidade do item a\n";
+
+	}
+
+	if(n1<34 && n1>90){
+
+                printf("O numero %d esta no range de funcionalidade do item b\n";
+
+        }
+
+	if(n1>15 && n1<35){
+
+                printf("O numero %d esta no range de funcionalidade do item a\n";
+
+        }
+
+	if(n1>15 && n1<35){
+
+                printf("O numero %d esta no range de funcionalidade do item a\n";
+
+        }
+
+	if(n1>15 && n1<35){
+
+                printf("O numero %d esta no range de funcionalidade do item a\n";
+
+        }
+
+	if(n1>15 && n1<35){
+
+                printf("O numero %d esta no range de funcionalidade do item a\n";
+
+        }
+
+	if(n1>15 && n1<35){
+
+                printf("O numero %d esta no range de funcionalidade do item a\n";
+
+        }
+
+
+
+}
