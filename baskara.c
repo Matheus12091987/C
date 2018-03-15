@@ -9,15 +9,15 @@ void resolvendo_equacao(float valA3, float valB3, float valC3){
 
 	int i = -10;
 	float resultado = 0;
-	txt_txt = fopen("Equacao.txt", "w");
-	fprintf(txt_txt, "\n\nValor de X\tValor de Y");
+	txt_txt = fopen("Equacao.csv", "w");
+	fprintf(txt_txt, "Valor de X\tValor de Y");
 	printf("\n\nValor de X\tValor de Y");
 
 	for (i = -10 ; i <= 10 ; ++i){
 
 		resultado = (pow(i,2) * valA3) + (i * valB3) + (valC3);
 		printf("\n%d\t\t\%.2f", i, resultado);
-		fprintf(txt_txt,"\n\%d\t\t\%.2f", i, resultado);
+		fprintf(txt_txt,"\n\%d\t\%.2f", i, resultado);
 
 	}
 
