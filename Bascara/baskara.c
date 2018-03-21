@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+//#include <graphics.h>
 
 float valA, valB, valC;
 FILE *txt_txt;
