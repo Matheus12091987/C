@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <basic.H>
 
 void main(void){
 	int sair = 1;
@@ -11,6 +12,9 @@ void main(void){
 		system("clear");
 
 		printf("**********************************************************");
+		printf("\n*Programa para auxiliar na escolha geral de investimento *");
+		printf("\n**********************************************************\n\n");
+		printf("\n**********************************************************");
 		printf("\n**** Escolha uma Opção Abaixo:                        ****");
 		printf("\n**********************************************************");
 		printf("\n* 0 - Sair                                            ****");
