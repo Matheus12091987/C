@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <basic.H>
+#include <basic.h>
 
 void main(void){
 	int sair = 1;
