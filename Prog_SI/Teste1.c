@@ -12,7 +12,7 @@ void main(void){
 	gotoxy(10,20);
 	printf("Teste da CONIO1");
 	gotoxy(10,10);
-	printf("Teste da Conio2");
+	printf("Testes da Conio2");
 	scanf("%d", &est);
 
 }
