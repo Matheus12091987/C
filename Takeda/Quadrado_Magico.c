@@ -12,23 +12,40 @@ void main (void){
 	scanf("%d", &n);
 
 	int matriz[n][n];
-	int linha[n];
-	int coluna[n];
+	//int linha[n];
+	int *linha=(int *) calloc(n,sizeof(int));
+	//int coluna[n];
+	int *coluna=(int *) calloc(n, sizeof(int));
 
-	printf("\n\nDigite os valores para o quadrado mágico: ")
+	//for(int l = 0; l < n; ++l){
+
+      //  linha[l] = 0;
+        //coluna[l] = 0;
+
+	//}
+
+	printf("\n\nDigite os valores para o quadrado mágico: ");
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < n; ++j)
 		{
-			printf("\nDigite o valor da prosição %d / %d", i , j);
-			scanf("%d", matriz[i][j]);
-			linha[j][i] += matriz[i][j];
-
+			printf("\nDigite o valor da prosição %d / %d: ", i , j);
+			scanf("%d", &matriz[i][j]);
+			linha[i] += matriz[i][j];
+			coluna[j] += matriz[i][j];
 		}
 		p += matriz[i][i];
 		s += matriz[i][n-1-i];
 
 	}
+
+	for(int k = 0; k < n; ++k){
+
+        printf("\n\nValor de Linha x Coluna: %d x %d", linha[k], coluna[k]);
+
+	}
+
+	printf("\n\nValor de Principal x Secundaria: %d x %d", p, s);
 
 
 }
