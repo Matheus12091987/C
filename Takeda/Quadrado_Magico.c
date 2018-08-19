@@ -8,44 +8,56 @@
 int n,p,s;
 void main (void){
 
-	printf("Digite a dimenção do seu quadrado Perfeito: ");
+	printf("Digite a dimensão do seu Quadrado Perfeito: ");
 	scanf("%d", &n);
 
 	int matriz[n][n];
-	//int linha[n];
+	int vetor[n*n];
 	int *linha=(int *) calloc(n,sizeof(int));
-	//int coluna[n];
 	int *coluna=(int *) calloc(n, sizeof(int));
 
-	//for(int l = 0; l < n; ++l){
+	printf("\n\nDigite os valores para o Quadrado Mágico");
 
-      //  linha[l] = 0;
-        //coluna[l] = 0;
-
-	//}
-
-	printf("\n\nDigite os valores para o quadrado mágico: ");
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < n; ++j)
 		{
-			printf("\nDigite o valor da prosição %d / %d: ", i , j);
+			printf("\nDigite o valor da posição %d / %d: ", i , j);
 			scanf("%d", &matriz[i][j]);
 			linha[i] += matriz[i][j];
 			coluna[j] += matriz[i][j];
+			vetor[i+(j*(n-1))] = matriz[i][j];
 		}
 		p += matriz[i][i];
 		s += matriz[i][n-1-i];
 
 	}
 
-	for(int k = 0; k < n; ++k){
+	int error = 0;
 
-        printf("\n\nValor de Linha x Coluna: %d x %d", linha[k], coluna[k]);
+	for (int i = 0; ((error == 0) && (i < n)) ; ++i)
+	{
+		if((p == s)&&(p == linha[n-1])&&(p == coluna[n-1])&&(linha[i] == coluna[i])){
 
+			for (int j = i + 1; j < n; ++j)
+			{
+				if((linha[i] == linha[j])&&(coluna[i] == coluna[j])){}else{error = 1;}
+			}
+		}else{error = 1;}
 	}
 
-	printf("\n\nValor de Principal x Secundaria: %d x %d", p, s);
+	for (int i = 0; i < (n*n); ++i)
+	{
+		for (int j = (i+1); j < (n*n); ++j)
+		{
+			if(vetor[i] == vetor[j]){error = 1;}
+		}
+	}
 
+	if (error == 1){
+
+		printf("\n\nNão é um quadrado mágico\n\n");
+
+	}else{printf("\n\nÉ um quadrado mágico\n\n");}
 
 }
