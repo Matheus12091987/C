@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define TAM 20
+#define TAM 100
 /*### Variaveis Globais ###*/
-int vetor[TAM]={11,10,9,8,7,6,5,4,3,2,1,12,13,14,15,16,17,18,19,20};
+int vetor[TAM];
+
 int j, menor, maior, troca, pos_menor, pos_maior;
 /*### Funções ###*/
 void imprime(){
@@ -17,6 +18,10 @@ void imprime(){
 }
 /*### Programa Principal ###*/
 void main(void){
+
+	for (int i = 0; i < TAM; ++i){
+	vetor[i] = (rand()%10000); 
+	}
 
 	printf("\nVetor Original: ");
 	imprime();
