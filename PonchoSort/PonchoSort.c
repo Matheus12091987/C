@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define TAM 100
+#define TAM 10
 /*### Variaveis Globais ###*/
 int vetor[TAM];
 
