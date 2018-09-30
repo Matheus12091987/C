@@ -1,10 +1,18 @@
 Para incluir uma biblioteca direto no diretório padrão do linux seguir ciclo abaixo:
 
-Quando estamos na pasta raiz da biblioteca
+	Quando estamos na pasta raiz da biblioteca
 
-	sudo cp NomeDaBiblioteca.h /usr/include/
+		sudo cp NomeDaBiblioteca.h /usr/include/
 
-Quando não estamos na pasta raiz da biblioteca
+	Quando não estamos na pasta raiz da biblioteca
 
-	sudo cp /EndereçoDaPastaRaiz/NomeDaBiblioteca.h /usr/include/
+		sudo cp /EndereçoDaPastaRaiz/NomeDaBiblioteca.h /usr/include/
 
+Para pesquisar sobre uma função ou uma instrução de programas
+
+	abrir o terminal
+
+	usar o comando: man Digite_a_função
+
+	exemplo:	man printf
+				man cp
