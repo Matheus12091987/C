@@ -56,6 +56,7 @@ void inserir_fila(fila **inicio, fila **fim){
 
 		printf("Digite o Numero de RA: ");
 		scanf("%ld", &novo->RA);
+		novo->prox = NULL;
 
 		if(*inicio == NULL){
 
@@ -67,14 +68,13 @@ void inserir_fila(fila **inicio, fila **fim){
 
 		}
 
+		*fim = novo;
+
 	}
 
 	*fim = novo;
 
 	system("clear");
-
-	//printf("%p\n", novo);
-	//printf("%d", novo->RA);
 
 }
 
