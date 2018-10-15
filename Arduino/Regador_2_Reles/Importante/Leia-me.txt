@@ -1,0 +1,5 @@
+https://www.arduinoecia.com.br/2014/11/arduino-modulo-rtc-ds1302.html
+
+http://labdegaragem.com/forum/topics/como-instalo-uma-biblioteca-do-arduino-no-linux
+
+
