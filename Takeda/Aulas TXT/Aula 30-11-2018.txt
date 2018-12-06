@@ -1,0 +1,9 @@
+Arvore Binária e Arvore Binária AVL
+
+3; 9; 4; 32; 7; 64; 29; 71; 69; 7; 32; 47; -1; -7; -13; -4; 24
+
+Remoção -13, Grau 1, Raiz
+
+Transferir o inserir para não rebeber valores iguais
+
+

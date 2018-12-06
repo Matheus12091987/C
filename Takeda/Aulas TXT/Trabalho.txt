@@ -1,0 +1,16 @@
+Data de Entrega: 23-11-2018
+
+	Tema: Recursividade
+	Obs.: Estar dentro da ABNT (Pegar com a ANA CHINA)
+	Valor: 05% da nota
+
+Data de entrega: 30-11-2018
+
+	Tema:
+	Obs.: Estar dentro da ABNT (Pegar com a ANA CHINA)
+	Valor: 15% da nota
+
+
+Softwares de texto: Latex, Word, Mendeley
+
+Pesquisar lista duplamente encadeada

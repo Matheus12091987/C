@@ -1,0 +1,11 @@
+Temas a serem estudados
+
+1 - Recusividade
+
+2 - Struct
+3 - Typedef
+
+4 - Fila
+5 - Pilha
+
+6 - Ordenações - OK

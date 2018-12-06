@@ -1,0 +1,16 @@
+Fazer um trabalho para entragar manuscrito hoje 23/11/2018:
+
+Lista duplamente encadeada com inserção ordenada (por nome) e circular
+
+o 1º a entregar = +1.0
+o 2º a entregar = +0.8
+os demais ate as 22:10 = +0.5
+se entregar ate a proxima aula = +0.0
+se não entregar = -0.5
+
+				>= 0
+StrCmp(n1,n2)	== 0
+				<= 0
+
+n1 = Ana
+n2 = Amora

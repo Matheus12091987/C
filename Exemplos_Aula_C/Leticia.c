@@ -4,7 +4,7 @@
 	RA: 2840481723024									*/
 
 #include <stdio.h>
-#include <stdlib.h
+#include <stdlib.h>
 
 void regr(int n){
 
