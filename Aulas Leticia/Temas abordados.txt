@@ -1,9 +1,9 @@
 Temas a serem estudados
 
-1 - Recusividade
+1 - Recusividade - OK
 
-2 - Struct
-3 - Typedef
+2 - Struct - OK
+3 - Typedef - OK
 
 4 - Fila
 5 - Pilha

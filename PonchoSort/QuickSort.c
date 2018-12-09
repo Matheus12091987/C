@@ -1,64 +1,70 @@
+//================================================================
+// Nome Do Arquivo: quick.c
+// File Name: quick.c
+//
+// Descrição: Implementação do algoritmo quicksort
+// Description: Quick sort Algorithm
+//================================================================
+ 
+// Libs
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-#define MAX 100
+#define MAX 10
 
+void quick_sort(int *a, int left, int right);
 
-void quickpart(char *, int, int);
-void quicksort(char *, int);
+int main(int argc, char** argv)
+{
+    int i, vet[MAX] = {'f','r','t','h','J','u','s','d','b','n'};
 
-void quickpart(char *Item, int left, int right) {
-     int   i, j;
-     char  x, y;
-
-     i = left;
-     j = right;
-     x = Item[(left+right)/2];
-
-     do {
-         while ( (Item[i]<x) && (i<right) )
-             i++;
-         while ( (x<Item[j]) && (j>left) )
-             j--;
-
-         if (i<=j) {
-             y = Item[i];
-             Item[i] = Item[j];
-             Item[j] = y;
-             i++;
-             j--;
-         }
-
-     }while (i<=j);
-
-     if (left<j)
-        quickpart(Item,left,j);
-     if (i<right)
-        quickpart(Item,i,right);
-}
-
-void quicksort(char *Item, int count) {
-     quickpart(Item,0,count-1);
-}
-
-int main(void) {
-
-    char  Item[MAX],Copias[5][MAX];
-    int   i,n;
-
-    for (int i = 0; i < MAX; ++i){
-        Item[i] = (rand()%256); 
+    printf("\nVetor Original: \n");
+    for(i = 0; i < MAX; i++)
+    {
+        printf("%c", vet[i]);
     }
+    printf("\n");
+    
+    quick_sort(vet, 0, MAX - 1);
 
-    n=strlen(Item);
-
-    for (i=1;i<5;i++)
-        strcpy(Copias[i],Item);
-
-    printf("\nString Original:\n %s\n",Item);
-    quicksort(Copias[5],n);
-    printf("\nOrdenação por QuickSort:\n %s\n",Copias[5]);
-
+    printf("\nVetor Ordenado por QuickSort: \n");
+    for(i = 0; i < MAX; i++)
+    {
+        printf("%c", vet[i]);
+    }
+    printf("\n\n");
     return 0;
+}
+ 
+// Função de Ordenação por Seleção
+// Quick sort function
+void quick_sort(int *a, int left, int right) {
+    int i, j, x, y;
+     
+    i = left;
+    j = right;
+    x = a[(left + right) / 2];
+     
+    while(i <= j) {
+        while(a[i] < x && i < right) {
+            i++;
+        }
+        while(a[j] > x && j > left) {
+            j--;
+        }
+        if(i <= j) {
+            y = a[i];
+            a[i] = a[j];
+            a[j] = y;
+            i++;
+            j--;
+        }
+    }
+     
+    if(j > left) {
+        quick_sort(a, left, j);
+    }
+    if(i < right) {
+        quick_sort(a, i, right);
+    }
 }
