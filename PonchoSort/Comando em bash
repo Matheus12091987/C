@@ -1,0 +1,9 @@
+Para rodar e escrever os valores de tempo dentro de um arquivo de texto
+
+for j in $(seq 30); do (time for i in $(seq 10000); do ./testeC; done) 2>>PonchoSort.txt; done; for j in $(seq 30); do (time for i in $(seq 10000); do ./testeQ; done) 2>>QuickSort.txt; done
+
+
+Sites de Referencia
+
+https://pt.stackoverflow.com/questions/126441/redirecionar-valor-da-fun%C3%A7%C3%A3o-time-para-arquivo
+http://www.inf.ufpr.br/danielw/grad/ci066/20081/05-EntradaSaida.html

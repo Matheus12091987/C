@@ -28,8 +28,9 @@ void main(void){
 	//}
 
 
-	printf("\nVetor Original:\n%s", vetor);
-	//imprime();
+	//printf("\nVetor Original:\n%s", vetor);
+	printf("\nVetor Original: \n");
+	imprime();
 	printf("\n");
 
 	for (j=0 ; j<((TAM/2)) ; j++){
@@ -64,7 +65,8 @@ void main(void){
 				
 	}
 
-	printf("\nVetor Ordenado por PonchoSort:\n%s", vetor);
-	//imprime();
+	//printf("\nVetor Ordenado por PonchoSort:\n%s", vetor);
+	printf("\nVetor Ordenado por PonchoSort:\n");
+	imprime();
 	printf("\n\n");
 }

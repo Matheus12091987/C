@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define TAM 100
+#define TAM 10
 /*### Variaveis Globais ###*/
-int vetor[TAM];	// = {1,3,5,7,9,0,2,4,6,8};
+int vetor[TAM] = {1,3,5,7,9,8,4,6,2,0};
 
 int j, menor, maior, troca, pos_menor, pos_maior;
 /*### Funções ###*/
@@ -20,9 +20,9 @@ void imprime(){
 void main(void){
 
 
-	for (int i = 0; i < TAM; ++i){
-	vetor[i] = (rand()%256); 
-	}
+	//for (int i = 0; i < TAM; ++i){
+	//vetor[i] = (rand()%256); 
+	//}
 
 
 	printf("\nVetor Original: ");
