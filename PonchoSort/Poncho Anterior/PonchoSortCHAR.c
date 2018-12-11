@@ -3,16 +3,16 @@
 
 #define TAM 100
 /*### Variaveis Globais ###*/
-unsigned char vetor[TAM];// = {'f','r','t','h','J','u','s','d','b','n','1'};
+unsigned char vetor[TAM];// = {'f','r','t','h','J','u','s','d','b','n'};
 
 unsigned char menor, maior, troca, pos_menor, pos_maior;
 
-int j;
+long int j;
 
 /*### Funções ###*/
 void imprime(){
 
-	for(int x=0;x<TAM;x++){
+	for(long int x=0;x<TAM;x++){
 
 		//printf("| %c = %d|", vetor[x], vetor[x]);
 		printf("%c", vetor[x]);
@@ -23,8 +23,9 @@ void imprime(){
 /*### Programa Principal ###*/
 void main(void){
 
-	for (int i = 0; i < TAM; ++i){
-		vetor[i] = (rand()%256); 
+	for (long int i = 0; i < TAM; ++i){
+		//vetor[i] = (rand()%256);
+		scanf("%c", &vetor[i]); 
 	}
 
 	printf("\nVetor Original: ");
@@ -35,8 +36,8 @@ void main(void){
 		
 		menor = vetor[j];
 		
-		for(int i=j ; i<(TAM-j) ; i++){
-			if(vetor[i] <= menor){
+		for(long int i=j ; i<(TAM-j) ; i++){
+			if(vetor[i] >= menor){
 				menor = vetor[i];
 				pos_menor = i;
 			}
@@ -48,8 +49,8 @@ void main(void){
 		
 		maior = vetor[j];
 
-		for(int i=j ; i<(TAM-j) ; i++){
-			if(vetor[i] >= maior){
+		for(long int i=j ; i<(TAM-j) ; i++){
+			if(vetor[i] <= maior){
 				maior = vetor[i];
 				pos_maior = i;
 			}

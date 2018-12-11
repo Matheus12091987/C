@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define TAM 100
+#define TAM 1000
 /*### Variaveis Globais ###*/
-//unsigned char vetor[TAM] = {'f','r','t','h','J','u','s','d','b','n'};
-unsigned char vetor[TAM];
+unsigned char vetor[TAM];// = {'f','r','t','h','J','u','s','d','b','n'};
 
 unsigned char menor, maior, troca, pos_menor, pos_maior;
 
