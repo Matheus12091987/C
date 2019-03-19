@@ -1,6 +1,9 @@
-//soma da linhas e colunas e diagonal principal e secundária sem if dentro de for
-
-//if dentro de for utiliza em ciclos de máquina um valor exponencalizado
+/*####################################################################################
+###		Nome: Matheus Gonçalves Peres											   ###
+###		RA: 2840481723024														   ###
+###		Professor: Takeda														   ###
+###		Atividade: Quadrado Mágico Teste no Vetor		   						   ###
+####################################################################################*/
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -8,8 +11,7 @@
 int n,p,s;
 void main (void){
 
-	printf("Digite a dimensão do seu Quadrado Perfeito: ");
-	scanf("%d", &n);
+	n = 4;
 	int matriz[n][n];
 	int vetor[n*n];
 	int *linha=(int *) calloc(n,sizeof(int));
@@ -52,6 +54,30 @@ void main (void){
 			if(vetor[i] == vetor[j]){error = 1;}
 		}
 	}
+
+	printf("\n\nA Matriz digitada foi:\n");
+
+	for (int i = 0; i < (n*n) ; ++i){
+
+		if (i%4 == 0){
+
+			printf("\n");
+
+		}
+
+		printf("{ %d } ", vetor[i]);
+
+	}
+
+	printf("\n\n");
+
+	for(int i = 0 ; i<n ; ++i){
+
+		printf("\nLinha %d eh: %d, Coluna %d eh: %d", i, linha[i], i, coluna[i]);
+
+	}
+
+	printf("\nA principal eh: %d, a Secundaria eh: %d", p, s);
 
 	if (error == 1){
 
